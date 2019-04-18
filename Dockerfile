@@ -18,5 +18,5 @@ RUN echo 'Uncomment the correct proxy config for your enviroment' \
 
 # Show current folder structure in logs
 # RUN ls -al -R
-EXPOSE 80
+EXPOSE 8081
 CMD [ "pm2-runtime", "start", "pm2.json" ]
