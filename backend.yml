@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: backend-service
   labels:
-    run: backend-service
+    run: backend
 spec:
   type: LoadBalancer
   externalIPs:
