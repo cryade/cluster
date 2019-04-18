@@ -6,6 +6,8 @@ metadata:
     run: nginx
 spec:
   type: LoadBalancer
+  externalIPs:
+  -192.168.99.101
   ports:
   - port: 8080
     targetPort: 80
