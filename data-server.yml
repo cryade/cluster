@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: data-server
+spec:
+  selector:
+    matchLabels:
+      run: data-server
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: data-server
+    spec:
+      containers:
+        - name: data-server
+          image: index.docker.io/gaba5/webserver
+          ports:
+          - containerPort: 80
+      imagePullSecrets:
+        - name: patrickkeyregistry
