@@ -48,7 +48,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: index.docker.io/claben/e2e-backend:16
+          image: index.docker.io/claben/e2e-backend:17
           ports:
           - containerPort: 27017
           - containerPort: 80
